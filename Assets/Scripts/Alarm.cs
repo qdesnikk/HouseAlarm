@@ -9,7 +9,7 @@ public class Alarm : MonoBehaviour
     [SerializeField] private UnityEvent _entered;
     [SerializeField] private UnityEvent _leaved;
 
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent<Player>(out Player player))
         {
@@ -17,7 +17,7 @@ public class Alarm : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.TryGetComponent<Player>(out Player player))
         {

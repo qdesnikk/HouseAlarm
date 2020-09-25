@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
+[RequireComponent(typeof(AudioSource))]
+
 public class ControlAudio : MonoBehaviour
 {
     private AudioSource _audio;
 
-    void Awake()
+    private void Awake()
     {
         _audio = GetComponent<AudioSource>();
     }

@@ -248,6 +248,7 @@ GameObject:
   - component: {fileID: 531986377}
   - component: {fileID: 531986378}
   - component: {fileID: 531986376}
+  - component: {fileID: 531986379}
   m_Layer: 0
   m_Name: house
   m_TagString: Untagged
@@ -479,8 +480,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 531986377}
-        m_MethodName: Play
+      - m_Target: {fileID: 531986379}
+        m_MethodName: StartAlarmSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -504,8 +505,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 531986377}
-        m_MethodName: Pause
+      - m_Target: {fileID: 531986379}
+        m_MethodName: StopAlarmSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -515,6 +516,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &531986379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531986372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2dde8c0ff4903448bb65c944b3d1671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &940443695
 GameObject:
   m_ObjectHideFlags: 0
